@@ -6,7 +6,7 @@ In this project, I delved into key areas of back-end development such as databas
 
 ## Content Guide 🗺️
 
-▷ Feel free to navigate around using the content button located in the top right corner—it's a breeze for moving through the content.
+▷ Feel free to navigate around using the content button located in the top right corner, it's a breeze for moving through the content.
 
 ## API Endpoints testing 🔄 
 
@@ -55,3 +55,16 @@ http://127.0.0.1:8000/api/booking/tables/{bookingId}
 | PUT    | Update the booking            | Yes        | 200         |
 | PATCH  | Partially update the booking  | Yes        | 200         |
 | DELETE | Delete the booking            | Yes        | 200         |
+
+## 🚀 Quick Setup
+```bash
+pipenv install
+python manage.py migrate
+python manage.py createsuperuser  # admin/admin
+python manage.py runserver
+```
+
+**or manual:**
+```bash
+pip install django==4.1.3 djangorestframework mysqlclient djoser djangorestframework-simplejwt
+```
